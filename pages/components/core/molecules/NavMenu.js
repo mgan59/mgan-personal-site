@@ -15,7 +15,7 @@ const NavMenuItem = styled.li`
 
 const NavLink = styled.a`
   
-  border-bottom: ${props => props.isSelected ? '3px solid #555' : 'none'};
+  border-bottom: ${props => props.isSelected ? '3px solid #50BEB8' : 'none'};
   font-size: 1.2em;
   
   font-family: 'Roboto Slab';

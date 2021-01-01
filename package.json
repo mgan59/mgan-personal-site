@@ -1,6 +1,7 @@
 {
   "name": "mgan-personal-site",
   "version": "0.1.0",
+  "license": "Creative Commons Attribution-NonCommercial 4.0 International Public License",
   "private": true,
   "scripts": {
     "dev": "echo -n -e '\\033]0;NEXTJS MGAN\\007'; next -p 3000",

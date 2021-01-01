@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef, useState } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -17,17 +17,33 @@ const Frame = styled.div`
   
   ul {
      columns: 2;
+     list-style-type: none;
+     margin:0;
+     padding: .5em;
   }
 
+  /* setting dashed list -- https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
   ul li {
   
-      font-size: 1.4em;
-  color: #000;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+    font-size: 1em;
+    color: #0C0524;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-indent: -5px;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0 0 .2em 0;
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+    @media(min-width: 601px) {
+      font-size:1.4em;
+    }
   
-  line-height: 1.3em;
-  margin: 0;
+  }
+
+  ul li:before {
+    content: "- ";
+    text-indent: -5px;
   }
 `
 
@@ -50,7 +66,11 @@ const ServiceExampleLabel = styled.span`
   color: #626F90;
   font-weight: 500;
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 601px) {
+    font-size:1.5em;
+  }
 `
 
 const ActivityController = styled.div`
@@ -78,22 +98,17 @@ cursor: pointer;
 `
 
 const ServiceExampleActivities = (props) => {
-  // Add React Hooks / State to control the selection and which content block is loading
-  // finish wiring
-  const toggleClick = () => {
-    console.log('me clickie')
+  // Declare a new state variable, which we'll call "count"
+  const [activityType, setActivityType] = useState('design')
+  const toggleClick = (event, actionType) => {
+    setActivityType(actionType)
   }
-
-  return (
-    <Frame>
-
-      <ActivityController>
-        <ServiceExampleLabel>Example Pairing Activities:</ServiceExampleLabel>
-        <ToggleItem selected onClick={toggleClick}>Design</ToggleItem>
-
-        <ToggleItem onClick={toggleClick}>Development</ToggleItem>
-      </ActivityController>
-
+  let activityDesignSelected = ''
+  let activityDevelopmentSelected = ''
+  let activitySet = ''
+  if (activityType === 'design') {
+    activityDesignSelected = 'selected'
+    activitySet = (
       <ul>
         <li>Design System</li>
         <li>Figma Workflow &amp; Process</li>
@@ -102,12 +117,38 @@ const ServiceExampleActivities = (props) => {
         <li>Product Development</li>
         <li>Roadmap &amp; Priority Planning</li>
       </ul>
+    )
+  } else {
+    activityDevelopmentSelected = 'selected'
+    activitySet = (
+      <ul>
+        <li>Code Review(s)</li>
+        <li>Architecture Review</li>
+        <li>Pair Programming</li>
+        <li>Groomer's Workshop</li>
+        <li>Story Estimates</li>
+        <li>Bootcamp Tutor</li>
+      </ul>
+    )
+  }
+  return (
+    <Frame>
+
+      <ActivityController>
+        <ServiceExampleLabel>Activities:</ServiceExampleLabel>
+        <ToggleItem selected={activityDesignSelected} onClick={(event) => { toggleClick(event, 'design') }}>Design</ToggleItem>
+        <ToggleItem selected={activityDevelopmentSelected} onClick={(event) => { toggleClick(event, 'development') }}>Development</ToggleItem>
+      </ActivityController>
+
+      {activitySet}
 
     </Frame>
   )
 }
 
 // Set our proptypes when ready
-ServiceExampleActivities.propTypes = {}
+ServiceExampleActivities.propTypes = {
+
+}
 
 export default ServiceExampleActivities

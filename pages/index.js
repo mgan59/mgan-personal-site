@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRef, useState } from 'react'
 
 import styled from 'styled-components'
 
@@ -9,6 +10,11 @@ import QuoteBlock from './components/core/organisms/QuoteBlock'
 import ProjectBlock from './components/core/organisms/ProjectBlock'
 import Footer from './components/core/organisms/Footer'
 import ContactBlock from './components/core/organisms/ContactBlock'
+
+const PageFrame = styled.div`
+  min-height: 100vh;
+  
+`
 
 // template -- setup the page, first contain should be a column
 // This allow all subsequent `divs` in the page at the top to act as content blocks
@@ -43,8 +49,13 @@ const StandardBlock = styled.div`
 `
 
 export default function Home () {
+  const myRef = useRef(null)
+  // Declare a new state variable, which we'll call "count"
+  const [contactReason, setContactReason] = useState('')
+
+  const executeScroll = () => myRef.current.scrollIntoView()
   return (
-    <div>
+    <PageFrame>
       <Head>
         <title>Morgan Craft</title>
         <link rel='icon' href='/favicon.ico' />
@@ -63,7 +74,7 @@ export default function Home () {
         </ContentRow>
 
         <ContentRow>
-          <ServiceBlock />
+          <ServiceBlock scrollToFunc={executeScroll} setContactReason={setContactReason} />
         </ContentRow>
 
         <ContentRow backgroundColor='#ccc'>
@@ -74,8 +85,8 @@ export default function Home () {
           <ProjectBlock />
         </ContentRow>
 
-        <ContentRow>
-          <ContactBlock />
+        <ContentRow ref={myRef}>
+          <ContactBlock contactReason={contactReason} setContactReason={setContactReason} />
         </ContentRow>
 
         <ContentRow backgroundColor='#50BEB8'>
@@ -84,6 +95,6 @@ export default function Home () {
 
       </PageContainer>
 
-    </div>
+    </PageFrame>
   )
 }

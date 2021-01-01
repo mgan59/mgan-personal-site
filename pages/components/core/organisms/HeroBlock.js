@@ -14,7 +14,7 @@ import SocialIconBar from '../molecules/SocialIconBar'
 const StandardBlock = styled.div`
   display:flex;
   width: 100%;
-  border:1px dotted #ffeeee;
+  //border:1px dotted #ffeeee;
   //background-color: #ccc;
   padding: 2em 1em;
   
@@ -102,8 +102,9 @@ const HeroName = styled.h2`
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size:4em;
-  padding: 0;
+  padding: 0 0 .1em 0;
   margin: 0;
+  line-height:1em;
 `
 
 const HeroObjective = styled.p`
@@ -142,9 +143,14 @@ const HeroTopic = styled.dt`
   font-family: 'Lora', serif;
   font-weight: 500;
   font-style: italic;
-  font-size:1.3em;
+  font-size:1.5em;
   text-align:center;
   letter-spacing:.04em;
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 601px) {
+    font-size:1.6em;
+  }
   
 `
 
@@ -154,8 +160,12 @@ const HeroTopicDefinition = styled.dd`
   font-weight: 500;
   margin: 0;
   padding: 0;
-  font-size:2.2em;
+  font-size:1.8em;
   text-align:center;
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 601px) {
+    font-size:2.2em;
+  }
 `
 
 const HeroDefinitionFrame = styled.div`

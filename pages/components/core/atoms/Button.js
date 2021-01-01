@@ -15,6 +15,7 @@ const Button = styled.a`
   box-shadow: 0px 4px 1px #E1EEE8;
   border-radius: 4px;
   width: 10em;
+  min-height: 45px;
   max-height: 60px;
   padding: .6em .3em .6em .3em;
   cursor: pointer;
@@ -22,6 +23,8 @@ const Button = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  
+  transition: 220ms all ease-in-out;
 
   :hover {
     color: #000;

@@ -7,34 +7,60 @@ import ContentDash from '../atoms/ContentDash'
 
 const Header = styled.h3`
   font-family: 'Source Sans Pro', serif;
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin: 0;
   padding:0 .6em 0 0;
+  
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 601px) {
+    font-size:1.8em;
+  }
+  /* larger desktops */ }
+  @media(min-width: 801px) {}
 `
 
 const Frame = styled.div`
   display:flex;
   
   position: relative;
-  div svg {
+  
+  /* can control he position of content-dash here with media queries */
+  div svg{
     position: relative;
-    top: .5em;
+    top: .2em;
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    @media(min-width: 601px) {
+      top: .5em;
+    }
   }
 `
-const ServiceByline = styled.span`
+const ServiceByline = styled.div`
   display:flex;
   
   padding-left:.6em;
-  font-size:1.4em;
+  font-size:.9em;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  padding-top:.35em;
+  padding-top:.40em;
+  flex-direction: column;
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 601px) {
+    font-size:1.4em;
+    flex-direction: row;
+  }
+  /* larger desktops */ }
+  @media(min-width: 801px) {}
+`
+
+const ServiceByLineMulti = styled(ServiceByline)`
+  padding-top: 0;
 `
 
 const ServiceHeader = (props) => {
   let byLine
   if (props.bylineAddition) {
-    byLine = <ServiceByline>{props.bylineInfo} / &nbsp; <strong>{props.bylineAddition}</strong></ServiceByline>
+    byLine = <ServiceByLineMulti><span>{props.bylineInfo} </span><span>{props.bylineAddition}</span></ServiceByLineMulti>
   } else {
     byLine = <ServiceByline>{props.bylineInfo}</ServiceByline>
   }

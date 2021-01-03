@@ -193,7 +193,7 @@ const ContactBlock = (props) => {
       body: encodeFormData({
         // think here we can manually set the netlify `form-name`
         // and no longer need the hidden-field
-        'form-name': 'contact-form-homepage',
+        'form-name': 'contact',
         name: nameValue,
         email: emailValue,
         reason: props.contactReason,

@@ -42,8 +42,8 @@ const Component = (props) => {
       <LogoPlacementColumn hideLogo={props.hideLogo}>
         <LogoText>Morgan Craft</LogoText>
       </LogoPlacementColumn>
-      <NavMenuPlacement>
 
+      <NavMenuPlacement>
         {<NavMenu selected={props.selected} />}
       </NavMenuPlacement>
     </TopBar>

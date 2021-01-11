@@ -24,10 +24,11 @@ const StandardBlock = styled.div`
   order: 2;
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
-    padding: 2em 0;
+    padding: 2em 1em;
     width: 65%;
     order: 1;
   }
+  
 `
 
 // Styling the hero text atoms
@@ -64,7 +65,7 @@ const HeroMedia = styled.div`
 const HeroFrame = styled.div`
   margin: 0 auto;
   display: flex;
-  
+  padding-bottom:2em;
   max-width:1100px;
   
   flex-direction: column;
@@ -105,6 +106,7 @@ const HeroName = styled.h2`
   padding: 0 0 .1em 0;
   margin: 0;
   line-height:1em;
+  
 `
 
 const HeroObjective = styled.p`
@@ -164,6 +166,10 @@ const HeroTopicDefinition = styled.dd`
   text-align:center;
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
+    font-size:1.8em;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media(min-width: 801px) {
     font-size:2.2em;
   }
 `

@@ -50,6 +50,7 @@ const NavMenu = (props) => {
 
   return (
     <NavMenuList>
+      {/*
       <NavMenuItem>
         <NavLink href='/home' isSelected={home}>Home</NavLink>
       </NavMenuItem>
@@ -59,6 +60,7 @@ const NavMenu = (props) => {
       <NavMenuItem>
         <NavLink href='/contact' isSelected={contact}>Contact</NavLink>
       </NavMenuItem>
+      */}
     </NavMenuList>
   )
 }

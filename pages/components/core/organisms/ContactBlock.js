@@ -252,6 +252,7 @@ const ContactBlock = (props) => {
           <Button onClick={onClick}>Send Message</Button>
         </form>
       </div>
+      <br /><br /><br />
     </ContentFrame>
 
   )

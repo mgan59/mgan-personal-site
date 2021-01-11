@@ -22,7 +22,6 @@ const BadgeFrame = styled.div`
 
 const Badge = (props) => {
   // add icon support here for github...
-  console.log(props)
   let hasIcon = ''
   switch (props.icon) {
     case 'github':

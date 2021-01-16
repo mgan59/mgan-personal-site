@@ -27,8 +27,8 @@ const Frame = styled.div`
   
     font-size: 1.3em;
     color: #0C0524;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: ${props => props.theme.fonts.body};
+    font-weight: 200;
     text-indent: -5px;
     line-height: 1.3em;
     margin: 0;
@@ -53,7 +53,7 @@ const Frame = styled.div`
 const ServiceCopy = styled.p`
   font-size: 1.4em;
   color: #000;
-  font-family: 'Lato', sans-serif;
+  font-family: ${props => props.theme.fonts.body};
   font-weight: 400;
   padding: .4em 0;
   line-height: 1.3em;
@@ -62,7 +62,7 @@ const ServiceCopy = styled.p`
 
 // Lora Regular Italic
 const ServiceExampleLabel = styled.span`
-  font-family: 'Lora', serif;
+  font-family: ${props => props.theme.fonts.accent};
   color: #626F90;
   font-weight: 500;
   font-style: italic;
@@ -80,7 +80,7 @@ const ActivityController = styled.div`
 `
 
 const ToggleItem = styled.span`
-font-family: 'Lora', serif;
+font-family: ${props => props.theme.fonts.accent};
 margin: 0 .4em;
 font-size: 1.3em;
 letter-spacing: .3px;

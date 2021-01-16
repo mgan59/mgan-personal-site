@@ -7,7 +7,7 @@ import ContentFrame from '../templates/ContentFrame'
 
 const BrandingText = styled.p`
 color: #3B4B4A;
-font-family: 'Roboto Slab', serif;
+font-family: ${props => props.theme.fonts.primaryHeader};
 font-weight: 500;
 margin: 0;
 padding: 0;
@@ -17,7 +17,7 @@ text-align:left;
 
 const Text = styled.p`
 color: #3B4B4A;
-font-family: 'Roboto Slab', serif;
+font-family: ${props => props.theme.fonts.primaryHeader};
 font-weight: 500;
 margin: 0;
 padding: 0;

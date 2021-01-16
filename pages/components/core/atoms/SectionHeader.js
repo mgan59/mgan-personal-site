@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // Roboto Slab Bold
 const SectionHeader = styled.h2`
   color: #333;
-  font-family: 'Roboto Slab';
+  font-family: ${props => props.theme.fonts.primaryHeader};
   text-align:left;
   font-size:1.7em;
 

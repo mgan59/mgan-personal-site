@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 // Lora Bold Italic
 const Button = styled.a`
-  font-family: 'Lora', serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-size: 1.3em;
   letter-spacing: .3px;
   font-weight: 700;

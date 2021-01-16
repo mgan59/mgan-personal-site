@@ -33,7 +33,7 @@ const StandardBlock = styled.div`
 
 // Styling the hero text atoms
 const HeroOpeningGreeting = styled.div`
-  font-family: 'Lato';
+  font-family: ${props => props.theme.fonts.body};
   color: #ffffff;
   display:flex;
   position: relative;
@@ -100,7 +100,7 @@ const LargeProfileImage = styled.img`
 
 const HeroName = styled.h2`
   color: #50BEB8;
-  font-family: 'Roboto Slab', serif;
+  font-family: ${props => props.theme.fonts.primaryHeader};
   font-weight: 700;
   font-size:4em;
   padding: 0 0 .1em 0;
@@ -111,7 +111,7 @@ const HeroName = styled.h2`
 
 const HeroObjective = styled.p`
   color: #ffffff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: ${props => props.theme.fonts.secondaryHeader};
   font-size:2.0em;
   
   padding: 0;
@@ -126,7 +126,7 @@ const HeroObjective = styled.p`
 // Lato -- Light
 const Text = styled.span`
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-size: 2.6em;
   font-weight: 300;
   padding: 0;
@@ -142,7 +142,7 @@ const HeroDefinitionList = styled.dl`
 // Lora Medium Italics
 const HeroTopic = styled.dt`
   color: #8D8C92;
-  font-family: 'Lora', serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-weight: 500;
   font-style: italic;
   font-size:1.5em;
@@ -158,7 +158,7 @@ const HeroTopic = styled.dt`
 
 const HeroTopicDefinition = styled.dd`
   color: #ffffff;
-  font-family: 'Roboto Slab', serif;
+  font-family: ${props => props.theme.fonts.primaryHeader};
   font-weight: 500;
   margin: 0;
   padding: 0;

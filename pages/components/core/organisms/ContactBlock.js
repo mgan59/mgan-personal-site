@@ -21,7 +21,7 @@ const RadioDefinition = styled.dd`
 
 const FieldLabel = styled.span`
   color: #626F90;
-  font-family: 'Lora', serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-weight: 500;
   font-style: italic;
   font-size:1.4em;
@@ -31,7 +31,7 @@ const FieldLabel = styled.span`
 
 const RadioTextLabel = styled.span`
   color: #000;
-  font-family: 'Lora', serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-weight: 500;
   font-style: italic;
   font-size:1.3em;
@@ -94,7 +94,7 @@ const InputDefinition = styled.dd`
       width: 80%;
       color: #989898;
   
-      font-family: 'Lora', serif;
+    font-family: ${props => props.theme.fonts.accent};
     font-weight: 500;
     font-style: italic;
     font-size:1.3em;

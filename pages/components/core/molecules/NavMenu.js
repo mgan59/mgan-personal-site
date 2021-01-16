@@ -18,7 +18,7 @@ const NavLink = styled.a`
   border-bottom: ${props => props.isSelected ? '3px solid #50BEB8' : 'none'};
   font-size: 1.2em;
   
-  font-family: 'Roboto Slab';
+  font-family: ${props => props.theme.fonts.primaryHeader};
   font-weight: 600;
   color: #000;
   text-decoration: none;

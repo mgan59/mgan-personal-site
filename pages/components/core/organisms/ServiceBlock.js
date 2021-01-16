@@ -34,7 +34,7 @@ const Frame = styled.div`
 const ServiceCopy = styled.p`
   font-size: 1.1em;
   color: #0c0524;
-  font-family: 'Lato', sans-serif;
+  font-family: ${props => props.theme.fonts.body};
   font-weight: 300;
   padding: .6em .1em;
   line-height: 1.5em;

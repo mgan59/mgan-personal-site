@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const LogoText = styled.h1`
-  font-family: 'Roboto Slab';
+  font-family: ${props => props.theme.fonts.primaryHeader};
   font-size: 2.5rem;
   position: relative;
   top: 5px;

@@ -30,7 +30,7 @@ const QuoteContainer = styled.div`
     color: #fff;
     font-size: 1.8em;
 
-    font-family: 'Lora', serif;
+    font-family: ${props => props.theme.fonts.accent};
     font-weight: 500;
     font-style: italic;
     text-align:center;
@@ -53,7 +53,7 @@ const QuoteContainer = styled.div`
 const QuoteTickStart = styled.span`
   color: #ccc;
     font-size: 2em;
-    font-family: 'Lora', serif;
+    font-family: ${props => props.theme.fonts.accent};
     font-weight: 700;
     letter-spacing:.04em;
 

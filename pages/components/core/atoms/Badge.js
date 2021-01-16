@@ -15,7 +15,7 @@ const BadgeFrame = styled.div`
     padding-right: .2em;
   }
   span {
-    font-family: 'Roboto Slab';
+    font-family: ${props => props.theme.fonts.primaryHeader};
       color: #25716D;
   }
 `

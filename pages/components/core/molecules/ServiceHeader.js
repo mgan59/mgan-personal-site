@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import ContentDash from '../atoms/ContentDash'
 
 const Header = styled.h3`
-  font-family: 'Source Sans Pro', serif;
+  font-family: ${props => props.theme.fonts.secondaryHeader};
   font-size: 1.3em;
   margin: 0;
   padding:0 .6em 0 0;
@@ -39,7 +39,7 @@ const ServiceByline = styled.div`
   
   padding-left:.6em;
   font-size:.9em;
-  font-family: 'Lato', sans-serif;
+  font-family: ${props => props.theme.fonts.accent};
   font-weight: 400;
   padding-top:.40em;
   flex-direction: column;

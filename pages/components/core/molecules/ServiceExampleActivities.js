@@ -25,7 +25,7 @@ const Frame = styled.div`
   /* setting dashed list -- https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
   ul li {
   
-    font-size: 1em;
+    font-size: 1.3em;
     color: #0C0524;
     font-family: 'Lato', sans-serif;
     font-weight: 300;

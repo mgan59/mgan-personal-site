@@ -1,3 +1,7 @@
+---
+tags: mgan netlify deploy
+---
+
 # Configuring for Deploy
 
 > WIP, created a story to track this work.  Some more work needs done here.

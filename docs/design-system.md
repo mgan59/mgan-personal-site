@@ -7,9 +7,17 @@ tags: design-system mgan
 
 A design system is being constructed for the work on my personal website and this document will serve as the primary resource for all design related material.
 
+## Technical Overview
+
+### CSS & Theming
+
 We've adopted JS-AS-CSS for our component design system and specifically use [Styled-Components](https://styled-components.com/).
 
 To understand our theme view the [themeConstants.js](https://github.com/mgan59/mgan-personal-site/blob/main/themeConstants.js) file found in root.  
+
+### Component Organization
+
+The website has it's components organized within the `pages/core/componets/` folder using Brad Frost's [atomic design principles](https://bradfrost.com/blog/post/atomic-web-design/).
 
 ## Fonts
 

@@ -87,7 +87,7 @@ const RoleDescription = styled.p`
   padding: 0;
   margin: 0 0 .5em 0;
   font-size:1.3em;
-  font-family: Ibm Plex Sans;
+  font-family: IBM Plex Sans;
   font-weight: 100;
   color: #0C0524;
 `

@@ -20,7 +20,8 @@ const StandardBlock = styled.div`
   padding: 2em 1em;
   
   flex-direction:column;
-  content-justify: center;
+  justify-content: center;
+  align-items:center;
   
   order: 2;
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
@@ -28,6 +29,7 @@ const StandardBlock = styled.div`
     padding: 2em 1em;
     width: 65%;
     order: 1;
+    
   }
   
 `
@@ -142,18 +144,20 @@ const HeroDefinitionList = styled.dl`
   
 `
 // Lora Medium Italics
-const HeroTopic = styled.dt`
+const HeroTopic = styled.p`
   color: #8D8C92;
   font-family: ${props => props.theme.fonts.accent};
   font-weight: 500;
   font-style: italic;
-  font-size:1.5em;
-  text-align:center;
+  font-size:1.2em;
+  
   letter-spacing:.04em;
+  width:80%;
+  
 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
-    font-size:1.6em;
+    font-size:1.3em;
   }
   
 `
@@ -203,6 +207,7 @@ const HeroBlock = (props) => {
       <StandardBlock>
 
         <HeroObjective>Gain real world experience with my 12-week Engineering Apprenticeship</HeroObjective>
+        <HeroTopic>"The only way to build software is together"</HeroTopic>
         <Button onClick={handleClick}>I want to enroll</Button>
       </StandardBlock>
     </HeroFrame>

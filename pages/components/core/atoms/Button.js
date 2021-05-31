@@ -14,7 +14,7 @@ const Button = styled.a`
   background: #F8FFFF;
   box-shadow: 0px 4px 1px #E1EEE8;
   border-radius: 4px;
-  width: 10em;
+  width: ${props => props.extend ? '20em' : '10em'};
   min-height: 45px;
   max-height: 60px;
   padding: .6em .3em .6em .3em;

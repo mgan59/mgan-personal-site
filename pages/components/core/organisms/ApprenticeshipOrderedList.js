@@ -31,6 +31,9 @@ const ListItem = styled.li`
 
 const ApprenticeshipOrderedList = (props) => {
   const listItems = []
+  if (!props.text) {
+    return null
+  }
   props.text.forEach((textItem, i) => {
     listItems.push(<ListItem key={i} dangerouslySetInnerHTML={{ __html: textItem }} />)
   })

@@ -25,6 +25,9 @@ const Frame = styled.div`
 
 const BasicTextBlock = (props) => {
   const textParagraphs = []
+  if (!props.text) {
+    return null
+  }
   props.text.forEach((textItem, i) => {
     textParagraphs.push(<TextParagraph key={i}>{textItem}</TextParagraph>)
   })

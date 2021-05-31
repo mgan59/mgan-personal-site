@@ -24,6 +24,12 @@ const Frame = styled.div`
 `
 
 const ApprenticeshipMultiText = (props) => {
+  if (!props.textIntro) {
+    return null
+  }
+  if (!props.textKeywordDescriptions) {
+    return null
+  }
   const textParagraphs = []
   const textKeywordDescriptions = []
   props.textIntro.forEach((textItem, i) => {

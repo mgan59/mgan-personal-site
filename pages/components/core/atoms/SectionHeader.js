@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 // Roboto Slab Bold
 const SectionHeader = styled.h2`
   color: #333;
   font-family: ${props => props.theme.fonts.primaryHeader};
-  text-align:left;
+  text-align: ${props => props.textAlign ? props.textAlign : 'left'};
   font-size:1.7em;
 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
@@ -19,6 +19,8 @@ const SectionHeader = styled.h2`
 `
 
 // Set our prop-types when ready
-SectionHeader.propTypes = {}
+SectionHeader.propTypes = {
+  textAlign: PropTypes.string
+}
 
 export default SectionHeader

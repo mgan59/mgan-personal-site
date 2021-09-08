@@ -17,8 +17,6 @@ const Frame = styled.div`
   flex-direction:column;
   padding: 0 1em 1em 1em;
 
-  border: 1px dotted #0000ff;
-
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
     margin: 2em auto;

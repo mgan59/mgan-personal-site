@@ -5,13 +5,13 @@ import PropTypes from 'prop-types'
 // Roboto Slab Bold
 const SectionHeader = styled.h2`
   color: #333;
-  font-family: ${props => props.theme.fonts.primaryHeader};
+  font-family: ${props => props.theme.fonts.secondaryHeader};
   text-align: ${props => props.textAlign ? props.textAlign : 'left'};
-  font-size:1.7em;
+  font-size:1.5em;
 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
-    font-size:2.6em;
+    font-size:2.2em;
     
   }
   /* larger desktops */ }

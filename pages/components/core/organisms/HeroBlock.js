@@ -74,10 +74,10 @@ const HeroFrame = styled.div`
     flex-direction: row;
     width: 100%;  
   }
+
   /* larger desktops */ }
   @media(min-width: 801px) {
     flex-direction: row;
-    
   }
 `
 
@@ -98,7 +98,7 @@ const LargeProfileImage = styled.img`
   }
 `
 
-const HeroName = styled.h2`
+const HeroName = styled.h1`
   color: #50BEB8;
   font-family: ${props => props.theme.fonts.primaryHeader};
   font-weight: 700;
@@ -106,16 +106,14 @@ const HeroName = styled.h2`
   padding: 0 0 .1em 0;
   margin: 0;
   line-height:1em;
-  
 `
 
 const HeroObjective = styled.p`
-  color: #ffffff;
+  color: ${props => props.theme.colors.textInactive};
   font-family: ${props => props.theme.fonts.secondaryHeader};
-  font-size:2.0em;
-  
+  font-size:1.4em;
   padding: 0;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0 0 .5em 0;
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
   @media(min-width: 601px) {
@@ -126,58 +124,22 @@ const HeroObjective = styled.p`
 // Lato -- Light
 const Text = styled.span`
   color: #ffffff;
-  font-family: ${props => props.theme.fonts.accent};
+  font-family: ${props => props.theme.fonts.secondaryHeader};
   font-size: 2.6em;
   font-weight: 300;
   padding: 0;
   margin: 0;
 `
 
-const HeroDefinitionList = styled.dl`
-  margin: 0;
-  padding: 0;
-  width: 48%;
-  
-`
-// Lora Medium Italics
-const HeroTopic = styled.dt`
-  color: #8D8C92;
-  font-family: ${props => props.theme.fonts.accent};
-  font-weight: 500;
-  font-style: italic;
-  font-size:1.5em;
-  text-align:center;
-  letter-spacing:.04em;
-
-  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-  @media(min-width: 601px) {
-    font-size:1.6em;
-  }
-  
-`
-
-const HeroTopicDefinition = styled.dd`
-  color: #ffffff;
+const HeroRole = styled.h2`
+  color: #fff;
   font-family: ${props => props.theme.fonts.primaryHeader};
   font-weight: 500;
+  font-size:2em;
+  padding: 0 0 .1em 0;
   margin: 0;
-  padding: 0;
-  font-size:1.8em;
-  text-align:center;
-  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-  @media(min-width: 601px) {
-    font-size:1.8em;
-  }
-  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-  @media(min-width: 801px) {
-    font-size:2.2em;
-  }
-`
-
-const HeroDefinitionFrame = styled.div`
-  display: flex;
-  justify-content:center;
-
+  letter-spacing:.04em;
+  line-height:1em;
 `
 
 const IconFrame = styled.div`
@@ -199,18 +161,9 @@ const HeroBlock = (props) => {
         <HeroOpeningGreeting><Text>Hi, I'm</Text> <HeroArrow /></HeroOpeningGreeting>
 
         <HeroName>MORGAN CRAFT</HeroName>
-        <HeroObjective>Empowering people to achieve more</HeroObjective>
-        <HeroDefinitionFrame>
-          <HeroDefinitionList>
-            <HeroTopic>building</HeroTopic>
-            <HeroTopicDefinition>digital <br />products</HeroTopicDefinition>
-          </HeroDefinitionList>
+        <HeroRole>Fractional CTO</HeroRole>
+        <HeroObjective>Helping startups build high-performing technical teams and software users love</HeroObjective>
 
-          <HeroDefinitionList>
-            <HeroTopic>inspiring</HeroTopic>
-            <HeroTopicDefinition>mentor &amp; educator</HeroTopicDefinition>
-          </HeroDefinitionList>
-        </HeroDefinitionFrame>
         <IconFrame>
 
           <SocialIconBar />

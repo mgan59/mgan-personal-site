@@ -19,6 +19,8 @@ const ContentFrame = styled.div`
   margin: 0 auto;
   flex-direction:column;
   padding: 0 2em 1em 2em;
+
+  
 `
 
 export default ContentFrame

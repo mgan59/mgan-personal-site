@@ -45,7 +45,7 @@ const ServiceBlock = (props) => {
       <BodyText>As a Fractional CTO, I lead engineering and product teams to overcome organizational issues and implement highly effective systems.  I’ll also roll up my sleeves to get the job done.</BodyText>
 
       <h3>Technical Hiring Support</h3>
-      <BodyText>Whether you're searching for your first engineering hire, trying to fix a problem within your organization, or seeking to rapidly grow your team, I provide technical screening and strategc hiring support to set your team up for success.</BodyText>
+      <BodyText>Whether you're searching for your first engineering hire, trying to fix a problem within your organization, or seeking to rapidly grow your team, I provide technical screening and strategic hiring support to set your team up for success.</BodyText>
 
       <h3>Engineering Apprenticeships</h3>
       <BodyText>I'm passionate about helping young engineers develop their skills.  I offer a limited number of hands-on engineering apprenticeships to individuals and companies seeking to level up their talent through real-world experience and mentorship.</BodyText>

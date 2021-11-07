@@ -101,9 +101,9 @@ export default function About () {
           
         </ContentRow>
 
-        <ContentRowFooter backgroundColor='#50BEB8'>
+        <ContentRow backgroundColor='#50BEB8'>
           <Footer />
-        </ContentRowFooter>
+        </ContentRow>
 
       </PageContainer>
     </PageFrame>

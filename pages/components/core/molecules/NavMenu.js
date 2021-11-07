@@ -50,17 +50,19 @@ const NavMenu = (props) => {
 
   return (
     <NavMenuList>
-      {/*
+      
       <NavMenuItem>
-        <NavLink href='/home' isSelected={home}>Home</NavLink>
+        <NavLink href='/' isSelected={home}>Home</NavLink>
       </NavMenuItem>
       <NavMenuItem>
         <NavLink href='/about' isSelected={about}>About</NavLink>
       </NavMenuItem>
+      {/*
       <NavMenuItem>
         <NavLink href='/contact' isSelected={contact}>Contact</NavLink>
       </NavMenuItem>
       */}
+      
     </NavMenuList>
   )
 }

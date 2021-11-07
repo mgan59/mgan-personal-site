@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 // Need Some Molecules
 import BodyText from '../atoms/BodyText'
+import AttentionText from '../atoms/AttentionText'
 import SectionHeader from '../atoms/SectionHeader'
 // import ServiceHeader from '../molecules/ServiceHeader'
 
@@ -41,15 +42,6 @@ const ServiceSection = styled.div`
   @media(min-width: 801px) {}
 `
 
-const HelpCopy = styled.p`
-  font-family: ${props => props.theme.fonts.accent};
-  color: ${props => props.theme.colors.textInactive};
-  font-size: 1.4em;
-  font-style: italic;
-  font-weight: 500;
-  margin: .8em 0 .2em 0;
-  padding: 0;
-`
 
 const SpecificSolutions = styled.div`
   display: flex;
@@ -64,7 +56,7 @@ const SolutionSet = styled.div`
     font-weight: 700;
     font-size: ${props => props.theme.fontSize.bodyTablet};
     font-style: italic;
-    margin: .8em 0 .6em 0;
+    margin: .1em 0 .6em 0;
     padding: 0 0;
     /* tablet, landscape iPad, lo-res laptops ands desktops */ }
     @media(min-width: 601px) {
@@ -104,7 +96,7 @@ const SolvingChallengesBlock = (props) => {
     <Frame>
       <SectionHeader>Solve Your Technology Challenges From the Hiring Process Up</SectionHeader>
       <BodyText>I empower founders with technical expertise so that they can build strong engineering organizations and create a culture of accountability.</BodyText>
-      <HelpCopy>Get Help With....</HelpCopy>
+      <AttentionText>Get Help With....</AttentionText>
 
       <SpecificSolutions>
         <SolutionSet>

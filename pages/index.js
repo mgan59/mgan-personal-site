@@ -3,6 +3,9 @@ import { useRef, useState } from 'react'
 
 import styled from 'styled-components'
 
+// We build/bundle up our GoogleFonts from our ThemeConstant
+import { GOOGLE_FONT_TYPE_LOADER } from '../themeConstants'
+
 import MastHead from './components/core/organisms/MastHead'
 import HeroBlock from './components/core/organisms/HeroBlock'
 import ServiceBlock from './components/core/organisms/ServiceBlock'
@@ -12,6 +15,8 @@ import QuoteBlock from './components/core/organisms/QuoteBlock'
 import AboutSummaryBlock from './components/core/organisms/AboutSummaryBlock'
 import Footer from './components/core/organisms/Footer'
 import ContactBlock from './components/core/organisms/ContactBlock'
+
+import AttentionText from './components/core/atoms/AttentionText'
 
 const PageFrame = styled.div`
   min-height: 100vh;
@@ -64,7 +69,7 @@ export default function Home () {
         {/* Provided by g-font in recent embed tool, think this helps cdn cache the fonts */}
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         {/* Pair down the font-glyphs post design, don't need all weights */}
-        <link href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;300;500;700&family=Source+Sans+Pro:wght@100;300;400;700&family=Roboto:wght@100;200;300;400;500;600;700&display=swap' rel='stylesheet' />
+        <link href={`https://fonts.googleapis.com/css2?${GOOGLE_FONT_TYPE_LOADER}&display=swap`} rel='stylesheet' />
 
       </Head>
 

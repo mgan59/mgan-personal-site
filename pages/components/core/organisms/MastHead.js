@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 // Need Some Molecules
 import LogoText from '../atoms/LogoText'
+import LogoAbbrSymbol from '../atoms/LogoAbbrSymbol'
 import NavMenu from '../molecules/NavMenu'
 
 // Shaping a global header now in here for us to attach into other pages....
@@ -39,8 +40,10 @@ const NavMenuPlacement = styled.div`
 const Component = (props) => {
   return (
     <TopBar backgroundColor={props.backgroundColor}>
+      {/* Current hiding logo so our Nav in mobile can expand, eventually move to hamburger */}
       <LogoPlacementColumn hideLogo={props.hideLogo}>
-        <LogoText>Morgan Craft</LogoText>
+        {props.showAbbr? <LogoAbbrSymbol/> : null}
+        {props.showLogoText? <LogoText>Morgan Craft</LogoText> : null}
       </LogoPlacementColumn>
 
       <NavMenuPlacement>

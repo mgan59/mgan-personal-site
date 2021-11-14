@@ -92,7 +92,7 @@ export default function About () {
             <h2>What I Do</h2>
             <BodyText>For many CEOs, the ability to effectively leverage technology is a make-or-break challenge.</BodyText>
             <BodyText>I share insight with non-technical leaders to help them make smarter business decisions, and I teach them to recognize whether or not their team is moving in the right direction. With every team I work with, I strive to implement learning systems and establish processes to build strong, scalable organizations. </BodyText>
-            <BodyText>From guiding teams of engineers to giving founders the tools they need to create a culture of accountability, my goal is to set up every company I work with for long-term success.</BodyText>
+            <BodyText>From guiding teams of engineers to giving founders the tools they need to create a culture of accountable, my goal is to set up every company I work with for long-term success.</BodyText>
             <AttentionText>I help companies with....</AttentionText>
             <ServiceListing />
 

@@ -70,7 +70,7 @@ export default function Home () {
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         {/* Pair down the font-glyphs post design, don't need all weights */}
         <link href={`https://fonts.googleapis.com/css2?${GOOGLE_FONT_TYPE_LOADER}&display=swap`} rel='stylesheet' />
-
+        <meta name='ahrefs-site-verification' content='a0053672f7d85309642950729041cc1d9f8d797ce1f190fd9110f17b98073251' />
       </Head>
 
       <PageContainer>

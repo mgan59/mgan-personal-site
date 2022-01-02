@@ -55,7 +55,7 @@ const AboutSummaryBlock = (props) => {
     <Frame>
       <SectionHeader>About Morgan</SectionHeader>
 
-      <BodyCopy>I've been a startup founder, CTO, interim CEO, and Lead Engineer.  With 20 years of engineering expereince working with earl-stage startups to global enterprise technical companies, and I still spend a significant amount of my time writing code and developing software.</BodyCopy>
+      <BodyCopy>I've been a startup founder, CTO, interim CEO, and Lead Engineer.  With 20 years of engineering experience working with earl-stage startups to global enterprise technical companies, and I still spend a significant amount of my time writing code and developing software.</BodyCopy>
 
       <BodyCopy>I've built products, managed teams, raised capital, and even sold a company.  Currently, I'm building gitBabel, a developer platform that helps engineering teams learn, grow, and collaborate.</BodyCopy>
 

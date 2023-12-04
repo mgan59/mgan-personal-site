@@ -10,6 +10,7 @@ import MastHead from './components/core/organisms/MastHead'
 import HeroBlock from './components/core/organisms/HeroBlock'
 import ServiceBlock from './components/core/organisms/ServiceBlock'
 import SolvingChallengesBlock from './components/core/organisms/SolvingChallengesBlock'
+import PromotedContent from './components/core/organisms/PromotedContent'
 import QuoteBlock from './components/core/organisms/QuoteBlock'
 // import ProjectBlock from './components/core/organisms/ProjectBlock'
 import AboutSummaryBlock from './components/core/organisms/AboutSummaryBlock'
@@ -83,6 +84,12 @@ export default function Home () {
         <ContentRow>
           <SolvingChallengesBlock />
         </ContentRow>
+
+        {/*
+        <ContentRow>
+          <PromotedContent />
+        </ContentRow>
+        */}
 
         <ContentRow>
           <ServiceBlock scrollToFunc={executeScroll} setContactReason={setContactReason} />

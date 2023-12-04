@@ -54,12 +54,11 @@ const Frame = styled.div`
   
   margin: 0 auto;
   flex-direction:column;
-  padding: 0 1em .5em 1em; 
-  height: 100vh; 
+  padding: 0 1em 1em 1em; 
 `
 
 
-export default function About () {
+export default function fcto () {
   
   return (
     <PageFrame>
@@ -75,21 +74,22 @@ export default function About () {
 
       <PageContainer>
         {/* hiding logo placement, till we add a mobile hamburger menu */}
-        <MastHead backgroundColor='#fff' hideLogo selected='about' />
+        <MastHead backgroundColor='#fff' hideLogo selected='fcto' />
         
-
-        <ContentRow>
+        <ContentRow >
           <Frame>
-            <h1>About Morgan Craft</h1>
-            <BodyText>Through more than a decade of experience in technical leadership roles, I've developed an obsession with learning.  I've mentored engineers, led teams of developers, and helped CEOs understand what's going on with the technical side of their business. My experience has taught me that the key to making great products is to create teams with a built-in culture of learning.</BodyText>
-            <BodyText>In 2020 I founded gitBabel, the first developer platform designed to scale engineering teams through continuous learning and team collaboration. Gitbabel enables companies to document their work and create an enriching environment for developers to gain knowledge and grow their abilities. </BodyText>
-            <BodyText>Prior to founding gitBabel I was the CTO and Interim CEO for Hickory Training, an adaptive learning platform used by companies like Shopify, Stripe, and Mailchimp to train customer service and sales teams. During my time at Hickory, I led a team of engineers, data-scientist, and learning experts.  We rebuilt the product from the ground up, and helped to create a culture of learning, mentoring, and inclusive collaboration. </BodyText>
+            <h1>Fractional CTO Services</h1>
+            <h2>What I Do</h2>
+            <BodyText>For many CEOs, the ability to effectively leverage technology is a make-or-break challenge.</BodyText>
+            <BodyText>I share insight with non-technical leaders to help them make smarter business decisions, and I teach them to recognize whether or not their team is moving in the right direction. With every team I work with, I strive to implement learning systems and establish processes to build strong, scalable organizations. </BodyText>
+            <BodyText>From guiding teams of engineers to giving founders the tools they need to create a culture of accountable, my goal is to set up every company I work with for long-term success.</BodyText>
+            <AttentionText>I help companies with....</AttentionText>
+            <ServiceListing />
+
+            {/* <Button href='/contact'>Contact Me!</Button> */}
           </Frame>
           
-          
         </ContentRow>
-
-        
 
         <ContentRow backgroundColor='#50BEB8'>
           <Footer />

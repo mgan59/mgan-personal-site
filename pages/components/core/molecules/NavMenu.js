@@ -32,14 +32,18 @@ const NavLink = styled.a`
 const NavMenu = (props) => {
   let home = false
   let about = false
+  let fcto = false
   let contact = false
-
+  
   switch (props.selected) {
     case 'home':
       home = true
       break
     case 'about':
       about = true
+      break
+    case 'fcto':
+      fcto = true
       break
     case 'contact':
       contact = true
@@ -56,6 +60,9 @@ const NavMenu = (props) => {
       </NavMenuItem>
       <NavMenuItem>
         <NavLink href='/about' isSelected={about}>About</NavLink>
+      </NavMenuItem>
+      <NavMenuItem>
+        <NavLink href='/fcto' isSelected={fcto}>FCTO</NavLink>
       </NavMenuItem>
       {/*
       <NavMenuItem>
